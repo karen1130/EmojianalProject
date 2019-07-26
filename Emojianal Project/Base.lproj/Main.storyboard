@@ -18,29 +18,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xua-Wg-uAT">
-                                <rect key="frame" x="120" y="164" width="168" height="194"/>
-                                <state key="normal" title="Button" image="clown-face"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xua-Wg-uAT">
+                                <rect key="frame" x="120" y="164" width="168" height="195"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="153"/>
+                                <state key="normal" title="🤡"/>
+                                <connections>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kje-5e-eNl"/>
+                                    <action selector="showMessageWithSender:" destination="dkx-z0-nzr" eventType="touchUpInside" id="k9H-t6-bVN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y4Y-Z0-VAf">
                                 <rect key="frame" x="197" y="556" width="54" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLD-NV-jIq">
-                                <rect key="frame" x="117" y="533" width="214" height="160"/>
-                                <state key="normal" title="Button" image="woman-zombie_1f9df-200d-2640-fe0f"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLD-NV-jIq">
+                                <rect key="frame" x="120" y="521" width="176" height="206"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="162"/>
+                                <state key="normal" title="🧟‍♀️"/>
+                                <connections>
+                                    <action selector="showMessageWithSender:" destination="dkx-z0-nzr" eventType="touchUpInside" id="eMn-5d-Opt"/>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rIe-qX-rPW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dLD-NV-jIq" secondAttribute="bottom" constant="135" id="1BC-re-7xb"/>
                             <constraint firstItem="Xua-Wg-uAT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="5xh-7W-rZv"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dLD-NV-jIq" secondAttribute="trailing" constant="83" id="IsE-6j-Lql"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xua-Wg-uAT" secondAttribute="trailing" constant="126" id="PQy-Af-aEV"/>
-                            <constraint firstItem="dLD-NV-jIq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="117" id="PhE-au-B3q"/>
                             <constraint firstItem="Xua-Wg-uAT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="PyW-sp-Lah"/>
-                            <constraint firstItem="dLD-NV-jIq" firstAttribute="top" secondItem="Xua-Wg-uAT" secondAttribute="bottom" constant="175" id="pGM-jo-VMe"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dLD-NV-jIq" secondAttribute="bottom" constant="169" id="unU-y7-xVq"/>
+                            <constraint firstItem="dLD-NV-jIq" firstAttribute="top" secondItem="Xua-Wg-uAT" secondAttribute="bottom" constant="162" id="Qlc-vf-NbI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dLD-NV-jIq" secondAttribute="trailing" constant="118" id="TRw-Os-MYT"/>
+                            <constraint firstItem="dLD-NV-jIq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="YoH-e0-yw6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -50,8 +60,4 @@
             <point key="canvasLocation" x="137.68115942028987" y="111.83035714285714"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="clown-face" width="256" height="256"/>
-        <image name="woman-zombie_1f9df-200d-2640-fe0f" width="160" height="160"/>
-    </resources>
 </document>
